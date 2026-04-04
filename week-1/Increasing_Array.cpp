@@ -17,5 +17,6 @@ int main(){
         }
     }
     cout << moves << "\n";
+    
     return 0;
 }
