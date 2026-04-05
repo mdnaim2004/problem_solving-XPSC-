@@ -6,12 +6,12 @@ int main(){
     cin >> n;
     
     vector<long long int>arr(n);
-    for(int i=0; i<n; i++)
+    for(long long int i=0; i<n; i++)
         cin >> arr[i];
 
     long long int moves = 0;
 
-    for(int i=1; i<n; i++){
+    for(long long int i=1; i<n; i++){
         if(arr[i] < arr[i-1]){
             moves += arr[i-1]-arr[i];
             arr[i] = arr[i-1];
