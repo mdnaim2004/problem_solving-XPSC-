@@ -2,15 +2,16 @@
 using namespace std;
 
 int main(){
-    int n;
+    long long int n;
     cin >> n;
-    vector<int>arr(n);
-    for(int i=0; i<n; i++)
+    
+    vector<long long int>arr(n);
+    for(int i=1; i<n; i++)
         cin >> arr[i];
 
-    int moves = 0;
+    long long int moves = 0;
 
-    for(int i=0; i<n; i++){
+    for(int i=1; i<n; i++){
         if(arr[i] < arr[i-1]){
             moves += arr[i-1]-arr[i];
             arr[i] = arr[i-1];
