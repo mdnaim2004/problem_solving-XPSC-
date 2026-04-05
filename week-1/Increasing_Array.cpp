@@ -5,7 +5,7 @@ int main(){
     long long int n;
     cin >> n;
     
-    vector<long long int>arr(n);
+    vector<long long int> arr(n);
     for(long long int i=0; i<n; i++)
         cin >> arr[i];
 
