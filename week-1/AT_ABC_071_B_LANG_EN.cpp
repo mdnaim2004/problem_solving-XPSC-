@@ -4,6 +4,7 @@ using namespace std;
 int main(){
     string s;
     cin>>s;
+    
     bool fnd = false;
 
     for(char c= 'a'; c <= 'z'; c++){
