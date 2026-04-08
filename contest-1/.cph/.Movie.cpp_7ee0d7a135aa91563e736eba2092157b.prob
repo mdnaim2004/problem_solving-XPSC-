@@ -1,0 +1,1 @@
+{"name":"Local: Movie","url":"/home/mdnaim2004/mydesk/problem_solving-XPSC/contest-1/Movie.cpp","tests":[{"id":1775672735036,"input":"3\n2 1 10 10 15\n5 10 15 12 26\n10 10 100 100 200","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mdnaim2004/mydesk/problem_solving-XPSC/contest-1/Movie.cpp","group":"local","local":true}
