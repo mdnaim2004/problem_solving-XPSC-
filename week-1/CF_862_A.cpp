@@ -2,20 +2,25 @@
 using namespace std;
 
 int main(){
-    int s, x;
-    cin >> s >> x;
+    int n, x;
+    cin >> n >> x;
 
-    vector<int> arr(s);
+    set<int> s;
 
-    for(int i=0; i<s; i++){
-        cin >> arr[i];
+    for(int i=0; i<n; i++){
+        int a;
+        cin >> a;
+        s.insert(a);
     }
-    int ans = 0;
-    
+    int cnt = 0;
     for(int i=0; i<x; i++){
-        if(arr[i] == 0)
-            ans++;
+        if(s.count(i) == 0){
+            cnt++;
+        }
     }
-
+    if(s.count(x)){
+        cnt++;
+    }
+    cout << cnt << "\n";
     return 0;
 }
