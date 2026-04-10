@@ -9,17 +9,15 @@ int main(){
         int n;
         cin >> n;
 
-        vector<int> arr(n);
-        int sum = 0;
-        int mx = 0;
+        int cnt = 0;
         for(int i=0; i <n; i++){
-            cin >> arr[i];
-            sum += arr[i];
-            mx = max(mx, arr[i]);
+            int x;
+            cin >> x;
+            if(x == 1)
+                cnt++;   
         }
-        int val = (sum+1)/2;
-
-        int ans = max(mx, val);
+        
+        int ans = ((n-cnt) + (cnt+1)/2);
 
         cout << ans << "\n";
     }
