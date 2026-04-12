@@ -9,14 +9,14 @@ int main(){
         int n;
         cin >> n;
 
-        vector<int> arr(n);
+        vector<int> arr;
         int r = n * 3;
 
         for(int i=0; i<n; i++){
             arr.push_back(i+1);
             arr.push_back(r - 1);
             arr.push_back(r);
-            r -=2;
+            r-=2;
         }
 
         for(auto x : arr){
