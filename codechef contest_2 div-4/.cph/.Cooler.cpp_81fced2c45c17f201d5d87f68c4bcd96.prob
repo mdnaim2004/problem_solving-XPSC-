@@ -1,0 +1,1 @@
+{"name":"Local: Cooler","url":"/home/mdnaim2004/mydesk/problem_solving-XPSC/codechef contest_2 div-4/Cooler.cpp","tests":[{"id":1776269520802,"input":"3\n10 9\n40 38\n40 0","output":"10\n79\n820"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/mdnaim2004/mydesk/problem_solving-XPSC/codechef contest_2 div-4/Cooler.cpp","group":"local","local":true}
