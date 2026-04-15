@@ -7,10 +7,6 @@ int main(){
 
     int c1 = k+ (60*n);
     int c2 = k*n;
-
-    if(c1 < c2)
-        cout << c1 << endl;
-    else
-        cout << c2 << endl;
+     cout << min(c1, c2) << "\n";
     return 0;
 }
