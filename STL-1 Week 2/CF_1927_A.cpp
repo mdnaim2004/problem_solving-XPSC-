@@ -11,6 +11,22 @@ int main(){
         string s;
         cin >> s;
 
+        int fst = -1;
+        int lst = -1;
+
+        for(int i=0; i<n; i++){
+            if(s[i] == 'B'){
+                fst = i;
+                break;
+            }
+        }
+        for(int i=n-1; i>= 0; i--){
+            if(s[i] == 'B'){
+                lst = i;
+                break;
+            }
+        }
+        cout << lst -fst+1 << "\n";
         
     }
     return 0;
