@@ -26,8 +26,7 @@ int main(){
                 break;
             }
         }
-        cout << lst -fst+1 << "\n";
-        
+        cout << lst -fst+1 << "\n"; 
     }
     return 0;
 }
