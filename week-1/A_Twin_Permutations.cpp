@@ -2,6 +2,23 @@
 using namespace std;
 
 int main(){
-    
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        vector<int> arr(n);
+        vector<int> brr(n);
+        for(int i=0; i<n; i++){
+            cin >> arr[i];
+        }
+        for(int i=0; i<n; i++){
+            brr[i] = n+1 -arr[i];
+        }
+        for(int i=0; i<n; i++){
+            cout << brr[i] << " ";
+        }
+        cout << "\n" ;
+    }
     return 0;
 }
