@@ -1,15 +1,36 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main()
+{
     int t;
     cin >> t;
 
-    while(t--){
+    while (t--){
         int n;
         cin >> n;
+        map<string, int> freq;
+        vector<string> arr[3];
 
-        vecto<int>
+        for (int i = 0; i < 3; i++){
+            arr[i].resize(n);
+            for (int j = 0; j < n; j++){
+                cin >> arr[i][j];
+                freq[arr[i][j]]++;
+            }
+        }
+        int p[3] = {0};
+        for (int i = 0; i < 3; i++){
+            for (int j = 0; j < n; j++){
+                if (freq[arr[i][j]] == 1)
+                    p[i] += 3;
+                
+                else if (freq[arr[i][j]] == 2)
+                    p[i] += 1;
+    
+            }
+        }
+        cout << p[0] << " " << p[1] << " " << p[2] << "\n";
     }
     return 0;
 }
