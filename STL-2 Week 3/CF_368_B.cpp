@@ -11,7 +11,6 @@ int main(){
     while(m--){
         int l;
         cin >>l;
-        
         set<int> s;
 
         for(int i = l-1; i<n; i++){
